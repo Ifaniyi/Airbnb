@@ -9,30 +9,34 @@ import SearchBar from "./ui/searchbar";
 
 function Navbar(){
     return (
-      <div className="w-full h-auto flex flex-col">
+      <div className="w-full h-auto flex flex-col ">
 
-        <div className="flex gap-4 bg-green-400 p-4 h-auto w-full">
+        <div className="flex gap-4 bg-emerald-700 p-4 h-auto w-full flex-row justify-center items-center">
           <img src="/icon/Case.png" alt="airplane" className="w-8 h-8"/>
-          <p>Overseas trip? Get the latest information on travel guides</p>
-          <Button button={"More info"} />
+          <h1 className="text-white">Overseas trip? Get the latest information on travel guides</h1>
+          <Button button={"More info"} className="bg-black text-white rounded-full"/>
         </div>
 
-        <div className="flex flex-row gap-4 p-4">
+        <div className="flex flex-row gap-4 p-4 border-b border-gray-600 justify-center items-center">
+          <div className="flex justify-center items-center w-83">
           <Logo />
+          </div>
+          <div className="flex justify-center gap-2 p-3 justify-start items-start border-2 rounded-2xl shadow">
           <Search />
           <Checkin />
           <Checkout />
           <People />
           <SearchBar />
+          </div>
 
-          <div>
-            <Button button={"Sign in"} />
+          <div className="flex justify-center gap-4 p-3 justify-end items-end w-83">
+            <Button button={"Sign in"} className="bg-emerald-700 text-white rounded-full"/>
             <Button button={"Sign up"} />
           </div>
 
         </div>
 
-          <div className="flex flex-row gap-8 overflow-x-scroll p-4">
+          <div className="flex flex-row gap-7 overflow-x-scroll p-4 py-2">
             <IconComponent text={"Rooms"} icon="/icon/livingroom.png" />
             <IconComponent text={"Mansion"} icon="/icon/mansion.png" />
             <IconComponent text={"Countryside"} icon="/icon/farm1.png" />

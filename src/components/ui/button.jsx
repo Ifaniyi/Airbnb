@@ -1,7 +1,7 @@
 function Button(props){
     return(
-        <div className="border p-2 rounded-full">
-            <button>{props.button} 
+        <div>
+            <button className={props.className}>{props.button} 
             </button>
         </div>
     )

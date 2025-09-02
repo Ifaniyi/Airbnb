@@ -2,7 +2,7 @@
 function Icons(props){
     return(
         <div>
-            <img src="{props.icon}" alt="filter img" />
+            <img src={props.icon} alt="filter" />
         </div>
     )
 }
