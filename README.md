@@ -1,12 +1,69 @@
-# React + Vite
+## Project overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a full-stack clone of the popular accommodation booking platform AirBnB. The goal is to build a functional web application that allows users to browse property listings, view detailed property information, and complete bookings. The project will cover frontend development, backend APIs, database design, and deployment.
 
-Currently, two official plugins are available:
+## Tech stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Frontend:HTML,CSS,JavaScript(React or similar framework)
+  - Version Control: Git and GitHub
+  - Design Tools: Figma for UI/UX design
 
-## Expanding the ESLint configuration
+## UI/UX Design Planning
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Design Goals
+
+- Create intuitive booking flow - Maintain visual consistency
+- Ensure fast loading times
+- Prioritize mobile responsiveness
+
+### KeyFeatures
+
+- Property search and filtering
+- Detailed property viewing
+- Secure checkout process
+- User authentication
+
+### Color Styles:
+
+- Primary: #FF5A5F
+- Secondary: #008489
+- Background: #FFFFFF
+- Text: #222222
+- Secondary Text: #717171
+
+### Typography:
+
+- Primary Font: Circular, Medium (500), 16px
+- Headings: Circular, Bold (700), 24px-32px
+- Secondary Text: Circular, Book (400), 14px
+
+### Project Roles and Responsibilities
+
+| Roles               | Responsibilities                                                    |
+| :------------------ | ------------------------------------------------------------------- |
+| Project Manager     | Oversees timeline, coordinates team, manages deliverables           |
+| Frontend Developers | Implements UI components, ensures responsive design                 |
+| Backend Developers  | Builds APIs, manages database, implements business logic            |
+| Designers           | Creates mockups, maintains design system, ensures UX quality        |
+| QA/Testers          | Writes test cases, performs testing, reports bugs                   |
+| DevOps Engineers    | Manages deployment, CI/CD pipeline, server infrastructure           |
+| Product Owner       | Defines requirements, prioritizes features, represents stakeholders |
+| Scrum Master        | Facilitates agile processes, removes blockers, organizes meetings   |
+
+## UI Component Patterns
+
+1. Navbar:
+   - Logo
+   - Search bar
+   - User navigation
+   - Responsive menu
+2. Property Card:
+   - Property image
+   - Basic details (price, location, rating)
+   - Favorite button
+   - Responsive layout
+3. Footer:
+   - Site links
+   - Company information
+   - Social media links
+   - Copyright information
