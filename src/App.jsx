@@ -3,6 +3,7 @@ import Card from "./components/Card";
 import Navbar from "./components/Navbar"
 import Pic from "./components/Pic";
 import Moreshow from "./components/Moreshow";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -12,18 +13,29 @@ function App() {
       <Pic />
       <Allbutton />
       
-      <div className="flex">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+      <div className="flex flex-wrap gap-1 items-center">
+          <Card image="/icon/image.png" />
+          <Card image="/icon/containerimg.png" />
+          <Card image="/icon/image.png" />
+          <Card image="/icon/image.png" />
+          <Card image="/icon/image.png" />
+          <Card image="/icon/image.png" />
+          <Card image="/icon/image.png" />
+          <Card image="/icon/image.png" />
+          <Card image="/icon/image.png" />
+          <Card image="/icon/image.png" />
+          <Card image="/icon/image.png" />
+          <Card image="/icon/image.png" />
+          <Card image="/icon/image.png" />
+          
       </div>
 
-      <div className="justify-center items-center">
+      <div className="justify-center items-center flex">
         <Moreshow />
+      </div>
+
+      <div>
+        <Footer />
       </div>
 
     </div>
