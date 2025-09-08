@@ -7,7 +7,7 @@ function Rooms(){
                 <Icons icon="/icon/bathtub1.png" num="2"/>
                 <Icons icon="/icon/bed1.svg" num="2-4"/>
             </div>
- 
+
             <div className="">
                 <p>$2,350</p>
             </div>

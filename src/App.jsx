@@ -16,10 +16,10 @@ function App() {
       <div className="flex flex-wrap gap-1 items-center">
           <Card image="/icon/image.png" />
           <Card image="/icon/containerimg.png" />
-          <Card image="/icon/image.png" />
-          <Card image="/icon/image.png" />
-          <Card image="/icon/image.png" />
-          <Card image="/icon/image.png" />
+          <Card image="/icon/Imagecontainer1.png" />
+          <Card image="/icon/image5.png" />
+          <Card image="/icon/imagecontainer2.png" />
+          <Card image="/icon/imagecontainer3.png" />
           <Card image="/icon/image.png" />
           <Card image="/icon/image.png" />
           <Card image="/icon/image.png" />
