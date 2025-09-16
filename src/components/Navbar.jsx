@@ -9,51 +9,44 @@ import SearchBar from "./ui/searchbar";
 
 function Navbar(){
     return (
-      <div className="w-full h-auto flex flex-col ">
+      <div className="w-full h-auto flex flex-col">
 
         <div className="flex gap-4 bg-emerald-700 p-4 h-auto w-full flex-row justify-center items-center">
           <img src="/icon/Case.png" alt="airplane" className="w-8 h-8"/>
           <h1 className="text-white">Overseas trip? Get the latest information on travel guides</h1>
-          <Button button={"More info"} className="bg-black text-white rounded-full"/>
+          <Button button={"More info"} className="bg-black text-white rounded-full p-1 items-center justify-center"/>
         </div>
 
         <div className="flex flex-row gap-4 p-4 border-b border-gray-600 justify-center items-center">
-          <div className="flex justify-center items-center w-83">
-          <Logo />
-          </div>
-          <div className="flex justify-center gap-2 p-3 justify-start items-start border-2 rounded-2xl shadow">
-          <Search />
-          <Checkin />
-          <Checkout />
-          <People />
-          <SearchBar />
+        <div className="flex-row justify-start items-start w-83">
+              <Logo />
+        </div>
+
+          <div className="flex justify-center gap-2 p-5 justify-start items-start border-1 border-gray-200 rounded-2xl shadow rounded-full">
+            <div>
+               <Search />
+           </div>
+           <div className="border-l-2 border-gray-300 pl-4 flex">
+               <Checkin />
+            </div>
+            <div className="border-l-2 border-gray-300 pl-4 flex">
+               <Checkout />
+            </div>
+            <div className="border-l-2 border-gray-300 pl-4 flex">
+                <People />
+                <SearchBar />
+            </div>
           </div>
 
-          <div className="flex justify-center gap-4 p-3 justify-end items-end w-83">
-            <Button button={"Sign in"} className="bg-emerald-700 text-white rounded-full"/>
-            <Button button={"Sign up"} />
+          <div className="flex justify-center gap-2 p-3 justify-end items-end w-83">
+            <Button button={"Sign in"} className="bg-emerald-700 text-white rounded-full p-3"/>
+            <Button button={"Sign up"} className="rounded-full p-3 border border-gray-200"/>
           </div>
 
         </div>
 
           <div className="flex flex-row gap-7 overflow-x-scroll p-4 py-2">
-            <IconComponent text={"Rooms"} icon="/icon/livingroom.png" />
-            <IconComponent text={"Mansion"} icon="/icon/mansion.png" />
-            <IconComponent text={"Countryside"} icon="/icon/farm1.png" />
-            <IconComponent text={"Villa"} icon="/icon/villa1.png" />
-            <IconComponent text={"Tropical"} icon="/icon/palmtree1.png" />
-            <IconComponent text={"New"} icon="/icon/keychain1.png" />
-            <IconComponent text={"Amazing pool"} icon="/icon/swimmingpool1.png" />
-            <IconComponent text={"Beach house"} icon="/icon/vacations1.png" />
-            <IconComponent text={"Island"} icon="/icon/island1.png" />
-            <IconComponent text={"Camping"} icon="/icon/tent1.png" />
-            <IconComponent text={"Apartment"} icon="/icon/apartment1.png" />
-            <IconComponent text={"House"} icon="/icon/home1.png" />
-            <IconComponent text={"Lakefront"} icon="/icon/cottage1.png" />
-            <IconComponent text={"Farm house"} icon="/icon/barn1.png" />
-            <IconComponent text={"Treehouse"} icon="/icon/treehouse1.png" />
-            <IconComponent text={"Cabins"} icon="/icon/cabin1.png" />
-            <IconComponent text={"Castles"} icon="/icon/castletower1.png" />
+            <IconComponent />
           </div>
 
         </div>

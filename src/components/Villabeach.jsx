@@ -1,13 +1,14 @@
 function Villabeach(){
+
     return(
-        <div>
+        <div className="flex flex-row justify-between p-1 m-1 gap-7">
             <div>
                 <h2>Villa Arrecife Beach House</h2>
-                <p>Sidemen, Ball, Indonesia</p>
+                <p className="text-gray-400">Sidemen, Ball, Indonesia</p>
             </div>
-            <div className="flex flex-row gap-2">
-                <img src="/icon/Star 1.png" alt="villabeach" />
-                <p>4.76</p>
+            <div className="flex flex-row gap-1">
+                <img src="/icon/Star 1.png" alt="villabeach" className="w-5 h-5" />
+                <p className="">4.76</p>
             </div>
         </div>
     )
