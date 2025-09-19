@@ -1,4 +1,5 @@
  import Button from "./ui/button";
+import Rooms from "./ui/rooms";
 // import Rooms from "./ui/rooms";
 // import Villabeach from "./Villabeach";
 
@@ -10,7 +11,8 @@ function Card(){
         Cardwords:"Villa Arrecife Beach House", 
         Location:"Sidemen, Bali, Indonesia",
         Starimage:"/icon/Star_1.png",
-        startext: "2.76",
+        startext: "4.76",
+        Downp: "$2,350",
     },    
         {
         src:"/icon/containerimg.png",
@@ -18,7 +20,8 @@ function Card(){
         Cardwords:"Entire Cabin", 
         Location:"Nova Friburgo, Brazil",
         Starimage:"/icon/Star_1.png",
-        startext: "1.67",
+        startext: "4.76",
+        Downp: "$62",
     },    
         {
         src:"/icon/Imagecontainer1.png",
@@ -26,7 +29,8 @@ function Card(){
         Cardwords:"Earthen home", 
         Location:"Santa Marta, Colombia",
         Starimage:"/icon/Star_1.png",
-        startext: "4.12"
+        startext: "4.76",
+        Downp: "$386",
     },    
         {
         src:"/icon/image5.png",
@@ -34,19 +38,38 @@ function Card(){
         Cardwords:"Private room", 
         Location:"Santa Marta, Colombia",
         Starimage:"/icon/Star_1.png",
-        startext:"4.16"
-    }  
+        startext:"4.76",
+        Downp: "$134",
+    },
+        {
+        src:"/icon/image 6.png",
+        alt:"Gokce Turkay image",
+        Cardwords:"Gokce Turkay Estate",
+        Location:"Kayakoy, Turkey",
+        Starimage:"/icon/Star_1.png",
+        startext: "4.76",
+        Downp: "$980",
+    },
+        {
+        src:"/icon/imagecontainer3.png",
+        alt:"Palais Hassoun Marrakech image",
+        Cardwords:"Palais Hassoun Marrakech",
+        Location:"Marrakech, Morocco",
+        Starimage:"/icon/Star_1.png",
+        startext: "4.76",
+        Downp: "$3,450",
+    }
 ]
 
 const allCards = pcards.map((property) => (
-    <div>
+    <div className="">
         <div><img src={property.src} alt={property.alt} className="block w-full"/></div>
          <div className="flex flex-row items-center w-full gap-2">
                 <Button button={"Top Villa"} className="border border-gray-200 rounded-full p-1 shadow bg-gray-100"/>
                 <Button button={"Self Checkin"} className="border border-gray-200 rounded-full p-1 shadow bg-gray-100"/>
                 <Button button={"Free Reschedule"} className="border border-gray-200 rounded-full p-1 shadow bg-gray-100"/>
             </div>
-        <div className="flex flex-row flex-wrap border m-4 justify-between">
+        <div className="flex flex-row flex-wrap  m-4 justify-between ">
             <div>
                 <h2 className="">{property.Cardwords}</h2>
                 <h4>{property.Location}</h4>
@@ -54,6 +77,12 @@ const allCards = pcards.map((property) => (
             <div className="flex flex-row gap-1">
                 <img src={property.Starimage} alt="star icon" className="h-5 w-5"/>
                 <p>{property.startext}</p>
+            </div>
+            <div className="flex flex-row justify-between w-full mt-2">
+                <Rooms />
+                <div className="mt-4 mr-2 font-semibold">
+                    <p>{property.Downp}</p>
+                </div>
             </div>
         </div>
     </div>
