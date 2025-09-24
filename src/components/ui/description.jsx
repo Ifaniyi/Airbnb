@@ -1,3 +1,4 @@
+import Textdescription from "./textdescription";
 
 function Description() {
     const car = ['Description', 'What we offer', 'Reviews', 'About host']
@@ -18,6 +19,7 @@ function Description() {
 
             </div>
             <hr className="text-gray-300"/>
+            <Textdescription />
         </div>
     )
 }

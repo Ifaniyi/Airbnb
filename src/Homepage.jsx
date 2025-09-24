@@ -9,7 +9,10 @@ import Beachbackview from "./components/ui/beachbackview";
 import Beachrestside from "./components/ui/beachrestside";
 import Threeicon from "./components/ui/threeicon"; 
 import Description from "./components/ui/description";
-import Textdescription from "./components/ui/textdescription";
+import Form from "./components/Form";
+import Offercomponent from "./components/ui/offercomponent";
+
+
 
 const Homepage = () => {
     return(
@@ -69,16 +72,26 @@ const Homepage = () => {
                 <Threeicon />
             </div>
 
-            <div className="m-8 p-4">
-                <div className="flex flex-row gap-4">
+            <div className="">
 
+            <div className="">
+                <div className="m-8 p-4">
                 <Description />
-                <div>
-
+               
                 </div>
-                </div>
-                <Textdescription />
+               
             </div>
+
+             <div className="m-8 p-4 w-1/4 rounded-lg shadow-md hover:shadow-xl bg-gradient-to-r from-green-200 to-purple-300">
+                 <div className="text-2xl font-semibold mb-4" decoration-underline>
+                    $2,500 <span className="text-gray-200">/night</span>
+                </div>
+                <Form />
+            </div>
+            
+            </div>
+            <Offercomponent />
+        
 
             <footer>
                <Footer /> 
