@@ -11,6 +11,8 @@ import Threeicon from "./components/ui/threeicon";
 import Description from "./components/ui/description";
 import Form from "./components/Form";
 import Offercomponent from "./components/ui/offercomponent";
+import ReviewCard from "./components/ui/reviewcard";
+
 
 
 
@@ -40,7 +42,7 @@ const Homepage = () => {
                     <div className="">
                     <div className="m-8 p-4 flex flex-row gap-4 ">
                        <SaveShare src="/icon/Heart.png" text="Save"/>              
-                       <SaveShare src="/icon/Share.png" text="Save"/>              
+                       <SaveShare src="/icon/Share.png" text="Share"/>              
                     </div>
                     </div>
                 </section>
@@ -91,8 +93,11 @@ const Homepage = () => {
             
             </div>
             <Offercomponent />
+            <div className="m-4 p-4 ">
+                <ReviewCard />
+            </div>
+            
         
-
             <footer>
                <Footer /> 
             </footer>
